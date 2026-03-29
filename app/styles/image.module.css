@@ -1,0 +1,23 @@
+.card {
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 10px;
+  background: linear-gradient(135deg, #73be7b, #25adbd);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 160px; 
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 10px;
+}

@@ -1,0 +1,22 @@
+.form {
+  background: linear-gradient(135deg, #7e57e0, #30a247);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.form h2 {
+  margin:20px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0eb84c, #4ade80);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}

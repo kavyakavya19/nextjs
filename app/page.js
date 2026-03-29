@@ -1,25 +1,25 @@
-import Card from "./components/Card";
-import Button from "./ui/Button";
+import ImageCard from "./components/ImageCard";
+import ContactForm from "./forms/ContactForm";
 
 export default function Home() {
   return (
-    <div>
-      <h1 style={{ marginBottom: "20px" }}>Dashboard</h1>
+    <div className="home-container">
+      <h1 className="title">Dashboard</h1>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "20px"
-        }}
-      >
-        <Card title="Users" desc="Manage users" />
-        <Card title="Bookings" desc="Track bookings" />
-        <Card title="Revenue" desc="View analytics" />
+      <div className="grid">
+        <ImageCard
+  src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+  title="Cars"
+/>
+
+<ImageCard
+  src="https://images.unsplash.com/photo-1558981806-ec527fa84c39"
+  title="Bikes"
+/>
+
       </div>
-
-      <div style={{ marginTop: "30px" }}>
-        <Button text="Get Started" />
+      <div className="form-section">
+        <ContactForm />
       </div>
     </div>
   );
