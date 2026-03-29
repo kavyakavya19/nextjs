@@ -1,0 +1,28 @@
+.sidebar {
+  width: 220px;
+  padding: 20px;
+  background: linear-gradient(180deg, #1e293b, #312e81, #1e3a8a);
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  color: #c7d2fe;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  cursor: pointer;
+}

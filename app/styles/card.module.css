@@ -1,0 +1,24 @@
+.card {
+  padding: 20px;
+  border-radius: 14px;
+  margin: 15px 0;
+  color: white;
+  transition: 0.3s;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
