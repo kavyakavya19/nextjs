@@ -9,7 +9,7 @@ export default function ImageCard({ src, title }) {
           src={src}
           alt={title}
           fill
-          className={styles.image}
+          style={{ objectFit: "cover" }}
         />
       </div>
       <h3>{title}</h3>

@@ -1,0 +1,18 @@
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+}
+
+.container h1 {
+  font-size: 80px;
+}
+
+.container p {
+  margin-bottom: 20px;
+}

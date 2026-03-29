@@ -1,0 +1,21 @@
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  cursor: pointer;
+}
+
+.arrowBtn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.arrowBtn:hover {
+  opacity: 0.8;
+}

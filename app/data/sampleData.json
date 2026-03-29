@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "title": "Car Rental",
+    "desc": "Rent cars easily"
+  },
+  {
+    "id": 2,
+    "title": "Bike Rental",
+    "desc": "Affordable bikes"
+  }
+
+]
