@@ -1,0 +1,11 @@
+/* styles/module.module.css */
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.sidebar {
+  background: #f4f4f4;
+  padding: 10px;
+}

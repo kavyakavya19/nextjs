@@ -1,38 +1,71 @@
 "use client";
+
 import { useState } from "react";
-import FormInput from "../components/FormInput";
-import { handleChange, handleSubmit } from "./formHandler";
-import styles from "../styles/form.module.css";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
     name: "",
-    email: "",
+    email: ""
   });
 
+  const [users, setUsers] = useState([]);
+
+  // handle input
+  function handleChange(e) {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    });
+  }
+
+  // handle submit
+  function handleSubmit(e) {
+    e.preventDefault(); // 🔥 VERY IMPORTANT
+
+    if (!form.name || !form.email) {
+      alert("Fill all fields");
+      return;
+    }
+
+    setUsers([...users, form]);
+
+    // reset form
+    setForm({ name: "", email: "" });
+  }
+
   return (
-    <form
-      className={styles.form}
-      onSubmit={(e) => handleSubmit(e, form)}
-    >
-      <h2>Contact Us</h2>
-<FormInput
-  label="Name"
-  type="text"
-  name="name"   
-  value={form.name}
-  onChange={(e) => handleChange(e, setForm)}
-/>
+    <div>
+      <h2>Contact</h2>
 
-<FormInput
-  label="Email"
-  type="email"
-  name="email"   
-  value={form.email}
-  onChange={(e) => handleChange(e, setForm)}
-/>
+      <form onSubmit={handleSubmit}>
+        <input
+          name="name"
+          placeholder="Name"
+          value={form.name}
+          onChange={handleChange}
+        />
 
-      <button className={styles.btn}>Submit</button>
-    </form>
+        <input
+          name="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={handleChange}
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      {/* SHOW USERS */}
+      <h3>Users</h3>
+      {users.length === 0 ? (
+        <p>No users yet</p>
+      ) : (
+        users.map((u, i) => (
+          <p key={i}>
+            {u.name} - {u.email}
+          </p>
+        ))
+      )}
+    </div>
   );
 }

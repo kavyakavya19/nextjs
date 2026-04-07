@@ -1,0 +1,15 @@
+/* styles/globals.css */
+body {
+  font-family: Arial;
+}
+
+.header {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
